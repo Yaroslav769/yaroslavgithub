@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Сcылки</title>
+	</style>
+</head>
+
+<body>
+	<h3>Список гиперссылок</h3>
+	<ul>
+		<li>
+			<a href="http://kubsu.ru">Абсолютную гиперссылку на главную страницу сайта kubsu.ru.</a>
+		</li>
+
+		<li>
+			<a href="https://kubsu.ru">Абсолютную на главную сайта kubsu.ru в протоколе https.</a>
+		</li>
+
+		<li id='photo'>
+			<a href="https://kubsu.ru"><img src="image.jpg" alt='Фото' height="250" width="300"></a>
+		</li>
+		<li>
+			<a href="#">Сокращенная ссылка на внутреннюю страницу.</a>
+		</li>
+		<li>
+			<a href="/">Сокращенную ссылку на главную страницу.</a>
+		</li>
+		<li>
+			<a href="#form">Ссылку на фрагмент текущей страницы.</a>
+		</li>
+		<li>
+			<a href="https://example.com?param1=true&param2=false&param3=true">Ссылку с тремя параметрами в URL.
+			</a>
+		</li>
+
+		<li><a href="https://example.com?id=777">Ссылка с параметром id.</a></li>
+
+		<li><a href="second.html">Относительная ссылка на страницу в текущем каталоге.</a></li>
+
+		<li><a href="./about.html">Относительная ссылка на страницу в каталоге about.</a></li>
+
+		<li><a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше.</a></li>
+
+		<li><a href="../../index.html">Относительная ссылка на страницу в каталоге двумя уровнями выше.</a></li>
+
+		<li> Эта <a href="./about.html"> ссылка </a> контекстная. </li>
+
+		<li><a href="https://www.dns-shop.ru/product/be6c7d353ed3ed20/videokarta-palit-geforce-rtx-4090-gamerock-ned4090019sb-1020g/opinion/">Ссылка на фрагмент страницы стороннего сайта</a>
+		</li>
+
+		<li>
+			<img src="image2.jpg" alt="dude" usemap="#dude-map" height="100" width="120">
+			<map name="dude-map">
+				<area shape="rect" coords="0,0,50,150" href="https://store.steampowered.com/?l=russian" alt="Область 1">
+				<area shape="circle" coords="80,50,50" href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwiW3YrZvcCIAxWp1QIHHbuVHsAQPAgI" alt="Область 2">
+			</map>
+		</li>
+
+		<li><a href="">Ссылку с пустым href.</a></li>
+
+		<li><a>Ссылка без href.</a></li>
+
+		<li><a href="https://госавтоинспекция.рф/" rel="nofollow">Ссылка, запрещенная для поисковиков.</a></li>
+
+		<li><a href="https://www.sbtjapan.com/ru/" rel="noindex">Ссылка, запрещенная для индексации поисковиками;</a></li>
+
+		<li>
+			<ol>
+				<li><a href="https://www.gismeteo.ru/weather-krasnodar-5136/" title="Ссылка 1">Ссылка 1</a></li>
+				<li><a href="https://translate.google.com/?hl=ru&sl=en&tl=ru&op=translate" title="Ссылка 2">Ссылка 2</a></li>
+				<li><a href="https://www.youtube.com/?gl=RU&hl=ru" title="Ссылка 3">Ссылка 3</a></li>
+			</ol>
+		<li>
+			<a href="ftp://user:pass123@tavalik.ru/Temp/file.txt">Ссылку на файл на сервере FTP с авторизацией</a>
+		</li>
+
+	</ul>
+
+
+
+
+	<form id="form">
+		<h3>Заполнение формы</h3>
+
+		<label for="user-fio">ФИО:</label><br>
+		<input id="user-fio" name="user-fio" type="text" placeholder='Ваше полное имя' required>
+		<br>
+		<label for="user-phone"> Номер телефона:</label><br>
+		<input id="user-phone" name="user-phone" type="tel" pattern="[0-9]{11}" placeholder='7 (999)-999-99-99'>
+		<br>
+		<label for="user-email"> Электронная почта</label><br>
+		<input id="user-email" name="user-email" type="email" placeholder='example@example.example' required>
+		<br>
+		<label for="data">Дата рождения:</label><br>
+		<input id="data" name="data" type="date" required>
+		<br>
+		<label>Ваш пол:</label><br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Мужской</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Женский</label>
+		<br>
+		<label for="languages">Любимые языки программирования:
+			<br>
+			<select id="languages" name="languages" multiple>
+				<option value="Pascal">Pascal</option>
+				<option value="C">C</option>
+				<option value="C++">C++</option>
+				<option value="JavaScript">JavaScript</option>
+				<option value="PHP">PHP</option>
+				<option value="Python">Python</option>
+				<option value="Java">Java</option>
+				<option value="Haskel">Haskel</option>
+				<option value="Clojure">Clojure</option>
+				<option value="Prolog">Prolog</option>
+				<option value="Scala">Scala</option>
+			</select>
+		</label>
+
+		<p>
+			<label for="Биография">Биография: <br> </label>
+			<textarea id="Биография" name="Биография" rows="2" placeholder='Расскажите о себе'></textarea>
+		</p>
+		<label for="agree"> Ознакомлен(а)</label>
+		<input id="agree" name="agree" type="checkbox" required>
+		<br>
+		<input type="submit" value="Сохранить">
+	</form>
+</body>
+
+</html>
